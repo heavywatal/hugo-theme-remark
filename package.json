@@ -1,0 +1,16 @@
+{
+  "name": "hugo-theme-remark",
+  "version": "0.1.0",
+  "description": "Simple theme for Hugo with remark.js",
+  "scripts": {
+    "build": "node-sass --output-style=expanded -o static/ sass/",
+    "start": "node-sass --output-style=expanded -o static/ -w sass/",
+    "test": "http-server -o"
+  },
+  "repository": "https://github.com/heavywatal/hugo-theme-remark.git",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3"
+  }
+}

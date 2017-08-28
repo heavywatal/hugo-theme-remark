@@ -1,0 +1,64 @@
+html {
+  font-size: 150%;
+}
+
+body {
+  color: #444;
+  font-family: Palatino, Merriweather, serif;
+}
+
+pre,
+code,
+kbd {
+  font-family: "Ubuntu Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+
+a {
+  color: #0042ab;
+  text-decoration: none;
+}
+
+.remark-slide-content {
+  background-color: #fff;
+  font-size: inherit;
+  padding: 2rem;
+}
+
+.remark-slide-content h1,
+.remark-slide-content h2,
+.remark-slide-content h3 {
+  font-family: Palatino, Merriweather, serif;
+  font-weight: bold;
+}
+
+.remark-slide-content h1 {
+  font-size: 1.5rem;
+  margin: 3rem 0 4rem;
+}
+
+.remark-slide-content h2 {
+  font-size: 1.5rem;
+  margin: 0 0 2rem;
+}
+
+.remark-slide-content h3 {
+  font-size: 1.2rem;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.affiliation {
+  font-size: 1.1rem;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 12px;
+}
+
+.column-container {
+  display: flex;
+}
