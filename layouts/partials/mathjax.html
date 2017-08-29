@@ -4,8 +4,10 @@ MathJax.Hub.Config({
   displayIndent: "2em",
   tex2jax: {
     inlineMath: [['$','$']],
-    displayMath: [['$$','$$']],
-    processEnvironments: false
+    displayMath: [['\[','\]']],
+    processRefs: false,
+    processEnvironments: true,
+    preview: false
   }
 });
 MathJax.Hub.Queue(function() {

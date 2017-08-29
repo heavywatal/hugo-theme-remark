@@ -4,6 +4,26 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="/static/remark-theme.css">
 <title>hugo-theme-remark</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  displayAlign: "left",
+  displayIndent: "2em",
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['\[','\]']],
+    processRefs: false,
+    processEnvironments: true,
+    preview: false
+  }
+});
+MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i = 0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.classList.add('has-jax');
+  }
+});
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML"></script>
 </head>
 <body>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -19,23 +39,5 @@ var slideshow = remark.create({
   highlightLanguage: "no-highlight"
 });
 </script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  displayAlign: "left",
-  displayIndent: "2em",
-  tex2jax: {
-    inlineMath: [['$','$']],
-    displayMath: [['$$','$$']],
-    processEnvironments: false
-  }
-});
-MathJax.Hub.Queue(function() {
-  var all = MathJax.Hub.getAllJax(), i;
-  for(i = 0; i < all.length; i += 1) {
-    all[i].SourceElement().parentNode.classList.add('has-jax');
-  }
-});
-</script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML"></script>
 </body>
 </html>

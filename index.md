@@ -9,6 +9,16 @@
 ---
 ## Introduction
 
+$a^2 + b^2 = c^2$
+
+\[
+E = mc^2
+\]
+
+\begin{equation}
+e^{i\pi} + 1 = 0
+\end{equation}
+
 ---
 ## Methods
 
