@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+.remark-slide-scaler {
+  overflow: auto;
+}
+
 .remark-slide-content {
   background-color: $background-color;
   font-size: inherit;

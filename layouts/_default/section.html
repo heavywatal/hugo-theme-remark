@@ -19,6 +19,15 @@ var slideshow = remark.create({
     touch: true,
     click: false
   },
+  slideNumberFormat: function (current, total) {
+    // hide in title slide; start from 1
+    if (current > 1) {
+      return (current - 1) + '/' + (total - 1);
+    } else {
+      return '';
+    };
+  },
+  countIncrementalSlides: false,
   highlightLanguage: "no-highlight"
 });
 </script>
