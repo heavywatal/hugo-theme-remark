@@ -37,7 +37,7 @@ a {
 
 .remark-slide-content h1 {
   font-size: 1.5rem;
-  margin: 5rem 0 4rem;
+  margin: 3rem 0 2rem;
 }
 
 .remark-slide-content h2 {
@@ -109,6 +109,6 @@ a {
   background-image: url("/figures/title-background.gif");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 50%;
-  opacity: 0.4;
+  background-size: 40%;
+  opacity: 0.37;
 }
