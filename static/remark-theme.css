@@ -19,7 +19,7 @@ a {
 }
 
 .remark-slide-scaler {
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .remark-slide-content {
@@ -47,6 +47,10 @@ a {
 
 .remark-slide-content h3 {
   font-size: 1.2rem;
+}
+
+.remark-slide-content dt {
+  font-weight: bold;
 }
 
 .author {
@@ -86,4 +90,25 @@ a {
 
 .column:last-child {
   margin-right: 0;
+}
+
+.title-background-gif {
+  position: relative;
+  z-index: 42;
+}
+
+.title-background-gif::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url("/figures/title-background.gif");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
+  opacity: 0.4;
 }
