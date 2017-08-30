@@ -2,7 +2,7 @@
 
 .author[Watal M. Iwasaki and Hideki Innan]
 
-.affiliation[SOKENDAI (Graduate University for Advanced Studies)]
+.affiliation[SOKENDAI (The Graduate University for Advanced Studies)]
 
 .footnote[`https://github.com/heavywatal/hugo-theme-remark.git`]
 
