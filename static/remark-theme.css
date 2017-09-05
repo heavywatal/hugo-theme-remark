@@ -46,7 +46,12 @@ a {
 }
 
 .remark-slide-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin: 1.2rem 0 0;
+}
+
+.remark-slide-content ul {
+  margin: 0.8rem 0;
 }
 
 .remark-slide-content dt {
