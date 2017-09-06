@@ -11,25 +11,6 @@
 {{ .RawContent }}
 </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>
-var slideshow = remark.create({
-  ratio: '4:3',
-  navigation: {
-    scroll: false,
-    touch: true,
-    click: false
-  },
-  slideNumberFormat: function (current, total) {
-    // hide in title slide; start from 1
-    if (1 < current && current < total) {
-      return (current - 1) + '/' + (total - 1);
-    } else {
-      return '';
-    };
-  },
-  countIncrementalSlides: false,
-  highlightLanguage: "no-highlight"
-});
-</script>
+<script src="/remark-create.js"></script>
 </body>
 </html>
