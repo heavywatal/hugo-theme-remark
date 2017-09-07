@@ -7,9 +7,13 @@
 {{ partial "mathjax.html" . }}
 </head>
 <body>
-<textarea id="source">
-{{ .RawContent }}
-</textarea>
+<div id="source">
+{{ range (split .RawContent "\n---") }}{{ $v := (split . "\n???") }}
+{{ index $v 0 | markdownify }}
+{{ if gt (len $v) 1 }}???{{ index $v 1 }}{{ end }}
+---{{ end }}
+count: false
+</div>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="/remark-create.js"></script>
 </body>
