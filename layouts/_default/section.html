@@ -8,11 +8,11 @@
 </head>
 <body>
 <div id="source">
-{{ range (split .RawContent "\n---") }}{{ $v := (split . "\n???") }}
-{{ index $v 0 | markdownify }}
-{{ if gt (len $v) 1 }}???{{ index $v 1 }}{{ end }}
----{{ end }}
-count: false
+{{ range $i, $slide := (split .RawContent "\n---") }}
+{{ $parts := (split $slide "\n???") }}{{ if gt $i 0 }}---{{ end }}
+{{ index $parts 0 | markdownify }}
+{{ if gt (len $parts) 1 }}???{{ index $parts 1 }}{{ end }}
+{{ end }}
 </div>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="/remark-create.js"></script>
