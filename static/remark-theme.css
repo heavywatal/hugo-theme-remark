@@ -74,7 +74,7 @@ a {
 }
 
 .cite {
-  color: #777;
+  color: #666;
   font-size: 0.75rem;
   text-align: right;
 }
@@ -116,5 +116,5 @@ a {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 40%;
-  opacity: 0.7;
+  opacity: 1.0;
 }
