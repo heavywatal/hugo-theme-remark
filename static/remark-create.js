@@ -21,14 +21,14 @@ let slideshow = remark.create({
     let imgs = document.querySelectorAll(".remark-slide-container img");
     for(let i = 0; i < imgs.length; ++i){
       let src = imgs[i].src;
-      imgs[i].src = "";
+      imgs[i].src += "?q";
       imgs[i].src = src;
     }
   }
 
-  let headers = document.querySelectorAll("h2");
-  for(let i = 0; i < headers.length; ++i){
-    headers[i].onclick = reload_visible_img;
+  let images = document.querySelectorAll("img");
+  for(let i = 0; i < images.length; ++i){
+    images[i].onclick = reload_visible_img;
   }
 
   slideshow.on('hideSlide', function(slide) {
