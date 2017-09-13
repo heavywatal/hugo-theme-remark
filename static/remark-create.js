@@ -18,7 +18,7 @@ let slideshow = remark.create({
 });
 {
   reload_visible_img = function() {
-    let imgs = document.querySelectorAll(".remark-visible img");
+    let imgs = document.querySelectorAll(".remark-slide-container img");
     for(let i = 0; i < imgs.length; ++i){
       let src = imgs[i].src;
       imgs[i].src = "";

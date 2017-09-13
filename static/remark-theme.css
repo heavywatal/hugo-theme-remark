@@ -58,6 +58,10 @@ a {
   font-weight: bold;
 }
 
+.remark-notes-area {
+  font-size: 62.5%;
+}
+
 .author {
   font-weight: bold;
   font-size: 1.1rem;
@@ -116,5 +120,5 @@ a {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 40%;
-  opacity: 1.0;
+  opacity: 1;
 }
