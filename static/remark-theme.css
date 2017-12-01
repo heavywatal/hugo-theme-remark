@@ -52,6 +52,16 @@ a {
 
 .remark-slide-content ul {
   margin: 0.8rem 0;
+  padding-left: 1rem;
+}
+
+.remark-slide-content ul.task-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.remark-slide-content li {
+  margin-bottom: 0.5rem;
 }
 
 .remark-slide-content dt {

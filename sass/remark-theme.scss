@@ -64,6 +64,16 @@ a {
 
   ul {
     margin: 0.8rem 0;
+    padding-left: 1rem;
+
+    &.task-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+
+  li {
+    margin-bottom: 0.5rem;
   }
 
   dt {
