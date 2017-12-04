@@ -60,6 +60,10 @@ a {
   padding-left: 0;
 }
 
+.remark-slide-content ul.task-list ul.task-list {
+  padding-left: 1rem;
+}
+
 .remark-slide-content li {
   margin-bottom: 0.5rem;
 }
